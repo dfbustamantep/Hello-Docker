@@ -15,7 +15,7 @@ mongoose.connect('mongodb://daniel:password@monguito:27017/miapp?authSource=admi
 
 //ruta raiz 
 app.get('/',async(_req,res)=>{
-    console.log('listando... chanchitos')
+    console.log('listando...')
     const animales = await Animal.find();
     return res.send(animales)
 })
